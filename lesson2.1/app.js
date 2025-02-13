@@ -60,3 +60,11 @@ const moreNum = ['four', 'five', 'six'];
 const concat = [...strNums, ... moreNum];
 
 console.log(concat);
+
+//how to spread the objects
+
+const obj1 = {x: 1, y: 2};
+const obj2 = {z: 3};
+
+const obj3 = {...obj1, ...obj2}; //we use the spread operator
+console.log(obj3);
