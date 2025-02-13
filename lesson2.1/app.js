@@ -68,3 +68,28 @@ const obj2 = {z: 3};
 
 const obj3 = {...obj1, ...obj2}; //we use the spread operator
 console.log(obj3);
+
+
+const foo = ["one", "two", "three"];
+const [one, two, three] = foo;
+console.log(one);
+console.log(two);
+console.log(three);
+
+const [a, ...b] = ["one", "two", "three"];
+console.log(b);
+
+
+const person = {
+    name: "John",
+    age: 25,
+    country: "Moldova",
+};
+
+function printPersonInfo({name, age, country}){
+    console.log(`Name: ${name}`);
+    console.log(`Age: ${age}`);
+    console.log(`Country: ${country}`);
+}
+
+printPersonInfo(person);
