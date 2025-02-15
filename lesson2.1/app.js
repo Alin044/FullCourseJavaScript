@@ -115,3 +115,17 @@ function showMenu(
 }
 
 showMenu(options);
+
+
+//Destructuring inside destructuring
+
+const songs = [
+    {name: "Lucky You", singer: "Jonyer", duration: 4.34},
+    {name: "Just like you", singer: "NF", duration: 3.23},
+    {name: "Humble singer", singer: "Kendrik Lamar", duration: 2.23},
+    {name: "Old town road", singer: "Lil Nas X", duration: 1.43},
+    {name: "Cold shower", singer: "Central Cee", duration: 5.23},
+];
+
+const [, , {singer : s}] = songs;
+console.log(s); 
